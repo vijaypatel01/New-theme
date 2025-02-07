@@ -9,13 +9,12 @@
  */
 {
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "disabled": true,
+    "image-banner": {
+      "type": "image-banner",
       "settings": {}
     }
   },
   "order": [
-    "announcement-bar"
+    "image-banner"
   ]
 }
