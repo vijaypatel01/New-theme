@@ -8,8 +8,15 @@
  * ------------------------------------------------------------
  */
 {
+  "name": "t:sections.header.name",
   "type": "header",
-  "name": "Group name",
-  "sections": {},
-  "order": []
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {}
+    }
+  },
+  "order": [
+    "announcement-bar"
+  ]
 }
