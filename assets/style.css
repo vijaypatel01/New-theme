@@ -1,3 +1,9 @@
+/* common css */
+.page-width{
+  max-width:var(--page-width);
+  margin:0 auto;
+  padding:0 15px;
+}
 /* Announcement Bar css */
 
 /* Announcement Bar css */
