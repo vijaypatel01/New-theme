@@ -1,102 +1,329 @@
-<details-modal class="header__search">
-  <details>
-    <summary
-      class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle"
-      aria-haspopup="dialog"
-      aria-label="{{ 'general.search.search' | t }}"
-    >
-      <span>
-        <span class="svg-wrapper">
-          {{- 'icon-search.svg' | inline_asset_content -}}
-        </span>
-        <span class="svg-wrapper header__icon-close">
-          {{- 'icon-close.svg' | inline_asset_content -}}
-        </span>
-      </span>
-    </summary>
-    <div
-      class="search-modal modal__content gradient"
-      role="dialog"
-      aria-modal="true"
-      aria-label="{{ 'general.search.search' | t }}"
-    >
-      <div class="modal-overlay"></div>
-      <div
-        class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}"
-        tabindex="-1"
-      >
+<div class="custom-search-bar">
 
-          <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+<form action="{{ routes.search_url }}" method="get">
 
-        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-          <div class="field">
-            <input
-              class="search__input field__input"
-              id="{{ input_id }}"
-              type="search"
-              name="q"
-              value="{{ search.terms | escape }}"
-              placeholder="{{ 'general.search.search' | t }}"
-                role="combobox"
-                aria-expanded="false"
-                aria-owns="predictive-search-results"
-                aria-controls="predictive-search-results"
-                aria-haspopup="listbox"
-                aria-autocomplete="list"
-                autocorrect="off"
-                autocomplete="off"
-                autocapitalize="off"
-                spellcheck="false"
-            >
-            <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
-            <input type="hidden" name="options[prefix]" value="last">
-            <button
-              type="reset"
-              class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
-              aria-label="{{ 'general.search.reset' | t }}"
-            >
-              <span class="svg-wrapper">
-                {{- 'icon-reset.svg' | inline_asset_content -}}
-              </span>
-            </button>
-            <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-              <span class="svg-wrapper">
-                {{- 'icon-search.svg' | inline_asset_content -}}
-              </span>
-            </button>
-          </div>
+<input type="text" name="q" placeholder=":magnifying_glass_tilted_left: What can we help you find?" aria-label="Search" class="search-input" id="custom-search-input" />
 
-            <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-              sss
-              {%- for article in predictive_search.resources.articles -%}
-                <li
-                  id="predictive-search-option-article-mobile-{{ forloop.index }}"
-                  class="predictive-search__list-item"
-                  role="option"
-                  aria-selected="false"
-                >
-                  <a href="{{ article.url }}" class="predictive-search__item link link--text" tabindex="-1">
-                    <div class="predictive-search__item-content predictive-search__item-content--centered">
-                      <p class="predictive-search__item-heading h5">{{ article.title | escape }}</p>
-                    </div>
-                  </a>
-                </li>
-              {%- endfor -%}
-            </div>
+<button type="submit" class="search-button">➤</button>
 
-            <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-        </form>
-          </predictive-search>
-        <button
-          type="button"
-          class="search-modal__close-button modal__close-button link link--text focus-inset"
-          aria-label="{{ 'accessibility.close' | t }}"
-        >
-          <span class="svg-wrapper">
-            {{- 'icon-close.svg' | inline_asset_content -}}
-          </span>
-        </button>
-      </div>
-    </div>
-  </details>
-</details-modal>
+</form>
+
+</div>
+
+<div class="predictive-search predictive-search--header" id="predictive-search-box" tabindex="-1" style="display: none;">
+
+<div id="predictive-search-results" role="listbox">
+
+<div id="predictive-search-results-groups-wrapper" class="predictive-search__results-groups-wrapper">
+
+<div class="predictive-search__result-group">
+
+<h2 id="predictive-search-queries" class="predictive-search__heading">Suggestions</h2>
+
+<ul id="predictive-search-results-queries-list" class="predictive-search__results-list" role="group" aria-labelledby="predictive-search-queries">
+
+<!-- Suggestions will be populated here -->
+
+</ul>
+
+</div>
+
+<div class="predictive-search__result-group">
+
+<h2 id="predictive-search-products" class="predictive-search__heading">Products</h2>
+
+<ul id="predictive-search-results-products-list" class="predictive-search__results-list" role="group" aria-labelledby="predictive-search-products">
+
+<!-- Products will be populated here -->
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="predictive-search-option-search-keywords" class="predictive-search__search-for-button">
+
+<button class="predictive-search__item predictive-search__item--term link link--text h5 animate-arrow" tabindex="-1" role="option" aria-selected="false">
+
+<span data-predictive-search-search-for-text="">Search for “shirt”</span>
+
+<svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path>
+
+</svg>
+
+</button>
+
+</div>
+
+</div>
+
+<style>
+
+/* Main search bar styling */
+
+.custom-search-bar {
+
+display: flex;
+
+align-items: center;
+
+position: absolute;
+
+top: 85px;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+z-index: 10;
+
+}
+
+.search-input {
+
+width: 500px;
+
+padding: 10px;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+}
+
+.search-button {
+
+padding: 8px;
+
+background-color: #007bff;
+
+color: white;
+
+border: none;
+
+border-radius: 4px;
+
+cursor: pointer;
+
+}
+
+.search-button:hover {
+
+background-color: #0056b3;
+
+}
+
+/* Predictive search box styling */
+
+.predictive-search {
+
+position: absolute;
+
+top: 135px;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+background-color: #151515;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+width: 715px;
+
+z-index: 9;
+
+}
+
+/* Result groups and items */
+
+.predictive-search__result-group {
+
+padding: 10px;
+
+}
+
+.predictive-search__heading {
+
+font-size: 14px;
+
+margin-bottom: 10px;
+
+color: #fff;
+
+text-transform: uppercase;
+
+}
+
+.predictive-search__results-list {
+
+list-style: none;
+
+padding: 0;
+
+margin: 0;
+
+}
+
+.predictive-search__list-item {
+
+padding: 8px 0;
+
+border-bottom: 1px solid #eee;
+
+}
+
+.predictive-search__item-content {
+
+display: flex;
+
+align-items: center;
+
+}
+
+.predictive-search__image {
+
+margin-right: 10px;
+
+}
+
+.predictive-search__item-heading {
+
+font-size: 16px;
+
+color: #fff;
+
+}
+
+.predictive-search__list-item:hover {
+
+background-color: #f8f8f8;
+
+}
+
+.predictive-search__results-list {
+
+overflow-x: hidden;
+
+max-height: 300px;
+
+overflow-y: auto;
+
+}
+
+</style>
+
+<script>
+
+document.getElementById('custom-search-input').addEventListener('input', function() {
+
+var searchBox = document.getElementById('predictive-search-box');
+
+if (this.value.length > 0) {
+
+searchBox.style.display = 'block';
+
+fetchPredictiveSearchResults(this.value);
+
+} else {
+
+searchBox.style.display = 'none';
+
+}
+
+});
+
+function fetchPredictiveSearchResults(query) {
+
+fetch(\/search/suggest?q=${query}&resources[type]=product,collection,page`)`
+
+.then(response => response.json())
+
+.then(data => {
+
+const suggestions = data.resources.results.queries;
+
+const products = data.resources.results.products;
+
+const collections = data.resources.results.collections;
+
+displayResults(suggestions, products, collections, query);
+
+});
+
+}
+
+function displayResults(suggestions, products, collections, query) {
+
+const suggestionsList = document.getElementById('predictive-search-results-queries-list');
+
+const productsList = document.getElementById('predictive-search-results-products-list');
+
+const searchForButton = document.querySelector('[data-predictive-search-search-for-text]');
+
+// Clear previous results
+
+suggestionsList.innerHTML = '';
+
+productsList.innerHTML = '';
+
+// Populate suggestions
+
+suggestions.forEach(suggestion => {
+
+const li = document.createElement('li');
+
+li.className = 'predictive-search__list-item';
+
+li.innerHTML = \<a href="/search?q=${encodeURIComponent(suggestion.text)}" class="predictive-search__item link link--text" tabindex="-1">`
+
+<div class="predictive-search__item-content predictive-search__item-content--centered">
+
+<p class="predictive-search__item-heading h5">${suggestion.styled_text}</p>
+
+</div>
+
+</a>\;`
+
+suggestionsList.appendChild(li);
+
+});
+
+// Populate products
+
+products.forEach(product => {
+
+const li = document.createElement('li');
+
+li.className = 'predictive-search__list-item';
+
+li.innerHTML = \<a href="${product.url}" class="predictive-search__item predictive-search__item--link-with-thumbnail link link--text" tabindex="-1">`
+
+<img class="predictive-search__image" src="${product.featured_image}" alt="${product.title}" width="50" height="50">
+
+<div class="predictive-search__item-content">
+
+<p class="predictive-search__item-heading h5">${product.title}</p>
+
+</div>
+
+</a>\;`
+
+productsList.appendChild(li);
+
+});
+
+// Update the search button text
+
+searchForButton.textContent = \Search for “${query}”`;`
+
+}
+
+</script>
