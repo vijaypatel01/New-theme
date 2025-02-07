@@ -1,3 +1,6 @@
+:root{
+  --page-width:{{ settings.page-width }};
+}
 /* Announcement Bar css */
 
 /* Announcement Bar css */
