@@ -13,10 +13,18 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "settings": {
+        "Text": "Welcome Store",
+        "url": ""
+      }
+    },
+    "header_7KRcN9": {
+      "type": "header",
       "settings": {}
     }
   },
   "order": [
-    "announcement-bar"
+    "announcement-bar",
+    "header_7KRcN9"
   ]
 }
