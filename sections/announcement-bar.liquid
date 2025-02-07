@@ -1,6 +1,4 @@
-<div
-  class="utility-bar"
->
+<div class="utility-bar">
   <div class="page-width">
     <p>announcement Bar</p>
   </div>
@@ -9,14 +7,22 @@
 {% schema %}
 {
   "name": "announcement-bar",
-  "max_blocks": 12,
   "class": "announcement-bar-section",
   "enabled_on": {
     "groups": ["header"]
   },
   "settings": [
-  ],
-  "blocks": [
+    {
+      "type": "text",
+      "id": "Text",
+      "label": "Text",
+      "default":"Welcome Store"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Url"
+    }
   ],
   "presets": [
     {
