@@ -1,0 +1,251 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_section_hYkhcD": {
+      "type": "custom-section",
+      "blocks": {
+        "container_M86HbG": {
+          "type": "container",
+          "settings": {
+            "bg_color": "",
+            "border_width": 0,
+            "border-color": "",
+            "border": "all"
+          },
+          "blocks": {
+            "group_MyqYLU": {
+              "type": "group",
+              "settings": {
+                "bg_color": "",
+                "box_size": 3,
+                "padding_top": 50,
+                "padding_bottom": 50,
+                "padding_left": 0,
+                "padding_right": 0,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "width": 100,
+                "display": "grid",
+                "justify-content": "space-between",
+                "align-items": "center",
+                "flex-direction": "row",
+                "gap": 25,
+                "border_width": 0,
+                "border-color": "",
+                "border": "all",
+                "mobile-flex-direction": "column",
+                "mobile-width": 100,
+                "mobile-padding_top": 0,
+                "mobile-padding_right": 0,
+                "mobile-padding_bottom": 0,
+                "mobile-padding_left": 0,
+                "mobile-margin_top": 0,
+                "mobile-margin_bottom": 0,
+                "mobile-gap": 0
+              },
+              "blocks": {
+                "article_ATixaE": {
+                  "type": "article",
+                  "settings": {
+                    "article": "news/hello-world"
+                  }
+                }
+              },
+              "block_order": [
+                "article_ATixaE"
+              ]
+            }
+          },
+          "block_order": [
+            "group_MyqYLU"
+          ]
+        }
+      },
+      "block_order": [
+        "container_M86HbG"
+      ],
+      "settings": {}
+    },
+    "custom_section_gbKFbM": {
+      "type": "custom-section",
+      "blocks": {
+        "container_BqhxhC": {
+          "type": "container",
+          "settings": {
+            "bg_color": "",
+            "border_width": 0,
+            "border-color": "",
+            "border": "all"
+          },
+          "blocks": {
+            "group_LQtktA": {
+              "type": "group",
+              "settings": {
+                "bg_color": "",
+                "box_size": 3,
+                "padding_top": 50,
+                "padding_bottom": 50,
+                "padding_left": 0,
+                "padding_right": 0,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "width": 100,
+                "display": "flex",
+                "justify-content": "space-between",
+                "align-items": "normal",
+                "flex-direction": "row",
+                "gap": 0,
+                "border_width": 0,
+                "border-color": "",
+                "border": "all",
+                "mobile-flex-direction": "column",
+                "mobile-width": 100,
+                "mobile-padding_top": 0,
+                "mobile-padding_right": 0,
+                "mobile-padding_bottom": 0,
+                "mobile-padding_left": 0,
+                "mobile-margin_top": 0,
+                "mobile-margin_bottom": 0,
+                "mobile-gap": 0
+              },
+              "blocks": {
+                "image_block_KHbtj8": {
+                  "type": "image-block",
+                  "settings": {
+                    "width": "50%",
+                    "height": "",
+                    "mobile-width": 100,
+                    "mobile-height": ""
+                  },
+                  "blocks": {
+                    "image_8HQPcM": {
+                      "type": "image",
+                      "settings": {}
+                    }
+                  },
+                  "block_order": [
+                    "image_8HQPcM"
+                  ]
+                },
+                "text_block_kDVRgq": {
+                  "type": "text-block",
+                  "settings": {
+                    "width": "50%",
+                    "bg_color": "",
+                    "border_radius": 0,
+                    "padding_top": 20,
+                    "padding_right": 20,
+                    "padding_bottom": 20,
+                    "padding_left": 20,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "mobile-width": "",
+                    "mobile-padding_top": 0,
+                    "mobile-padding_right": 0,
+                    "mobile-padding_bottom": 0,
+                    "mobile-padding_left": 0,
+                    "mobile-margin_top": 0,
+                    "mobile-margin_bottom": 0
+                  },
+                  "blocks": {
+                    "heading_iMXVK4": {
+                      "type": "heading",
+                      "settings": {
+                        "font-style": "montserrat_n5",
+                        "heading_size": "h2",
+                        "text": "Heading",
+                        "font_size": 36,
+                        "font_weight": "400",
+                        "line-height": "50.4",
+                        "color": "#000000",
+                        "padding_top": 0,
+                        "padding_bottom": 0,
+                        "margin_top": 0,
+                        "margin_bottom": 10
+                      }
+                    },
+                    "description_jCxKgm": {
+                      "type": "description",
+                      "settings": {
+                        "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+                        "font-style": "montserrat_n5",
+                        "font_size": 16,
+                        "font_weight": "300",
+                        "line-height": "19.5",
+                        "color": "#000000",
+                        "padding_top": 0,
+                        "padding_bottom": 0,
+                        "margin_top": 0,
+                        "margin_bottom": 10,
+                        "mobile-padding_top": 0,
+                        "mobile-padding_bottom": 0,
+                        "mobile-margin_top": 0,
+                        "mobile-margin_bottom": 0
+                      }
+                    },
+                    "button_dYhXQN": {
+                      "type": "button",
+                      "settings": {
+                        "button_title": "Button Label",
+                        "font-style": "montserrat_n5",
+                        "button_url": "",
+                        "font_size": 14,
+                        "font_weight": "500",
+                        "line-height": "24",
+                        "color": "#000000",
+                        "bg_color": "",
+                        "hover_color": "#000000",
+                        "hover_bg_color": "",
+                        "border_radius": 0,
+                        "border_width": 1,
+                        "border-color": "",
+                        "padding_top_bottom": 10,
+                        "padding_left_right": 20,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "button-width-max-content": true,
+                        "text-decoration": "none",
+                        "text-align": "left",
+                        "width": 0,
+                        "mobile-width": 0,
+                        "mobile-button-width-max-content": true
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "heading_iMXVK4",
+                    "description_jCxKgm",
+                    "button_dYhXQN"
+                  ]
+                }
+              },
+              "block_order": [
+                "image_block_KHbtj8",
+                "text_block_kDVRgq"
+              ]
+            }
+          },
+          "block_order": [
+            "group_LQtktA"
+          ]
+        }
+      },
+      "block_order": [
+        "container_BqhxhC"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "custom_section_hYkhcD",
+    "custom_section_gbKFbM"
+  ]
+}
