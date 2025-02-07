@@ -14,6 +14,11 @@
       aria-autocomplete="list"
     >
     <input name="options[prefix]" type="hidden" value="last">
+    <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+      <span class="svg-wrapper">
+        {{- 'icon-search.svg' | inline_asset_content -}}
+      </span>
+    </button>
     <div id="predictive-search" tabindex="-1"></div>
   </form>
 </predictive-search>
