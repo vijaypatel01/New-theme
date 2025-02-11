@@ -20,6 +20,7 @@
     {% endif %}
     {{ content_for_header }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
       :root{
         --page-width:{{ settings.page-width }};
