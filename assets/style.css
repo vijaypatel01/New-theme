@@ -4,8 +4,14 @@
   margin:0 auto;
   padding:0 15px;
 }
+.text-left{
+  text-align:left;
+}
 .text-center{
   text-align:center;
+}
+.text-right{
+  text-align:right;
 }
 .d-flex{
   display:flex;
