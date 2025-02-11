@@ -19,7 +19,7 @@
 .text-right{
   text-align:right;
 }
-.d-flex{
+.flex{
   display:flex;
 }
 .justify-content-between{
