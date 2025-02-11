@@ -39,7 +39,7 @@ $(document).ready(function () {
         dataType: 'json',
         success: function (cart) {
           const newSubtotal = (cart.items_subtotal_price / 100).toFixed(2);
-          $('.cart-total').text( newSubtotal);
+          $('.cart-total').text(newSubtotal);
           console.log('Cart updated:', cart);
         },
         error: function (error) {
