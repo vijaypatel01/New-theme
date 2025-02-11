@@ -21,30 +21,3 @@ addToCartForms.forEach((form) => {
     });
   });
 });
-$(document).ready(function () {
-    $('.cart-item__quantity-input').on('change', function () {
-      const line = $(this).data('line');
-      const quantity = $(this).val();
-      if (quantity < 1) {
-        alert('Quantity must be at least 1.');
-        return;
-      }
-      $.ajax({
-        url: '/cart/change.js',
-        type: 'POST',
-        data: {
-          line: line,
-          quantity: quantity
-        },
-        dataType: 'json',
-        success: function (cart) {
-          const newSubtotal = (cart.items_subtotal_price / 100).toFixed(2);
-          $('.cart-total').text(newSubtotal);
-          console.log('Cart updated:', cart);
-        },
-        error: function (error) {
-          console.error('Error updating cart:', error);
-        }
-      });
-    });
-  });
