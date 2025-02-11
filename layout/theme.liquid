@@ -22,7 +22,7 @@
     {{ 'style.css' | asset_url | stylesheet_tag }}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {%- if cart != empty -%}
-      <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'cart.js' | asset_url }}"></script>
     {% endif %}
     <style>
       :root{
