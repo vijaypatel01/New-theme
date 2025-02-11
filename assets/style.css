@@ -4,6 +4,12 @@
   margin:0 auto;
   padding:0 15px;
 }
+.w-100{
+  width:100%;
+}
+.w-50{
+  width:50%;
+}
 .text-left{
   text-align:left;
 }
