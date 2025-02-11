@@ -356,6 +356,45 @@
     </table>
   {% endif %}
 </form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    // Detect quantity input change
+    $('.cart-item__quantity-input').on('change', function () {
+      const line = $(this).data('line'); // Get the line number
+      const quantity = $(this).val(); // Get the updated quantity
+
+      // Ensure quantity is valid
+      if (quantity < 1) {
+        alert('Quantity must be at least 1.');
+        return;
+      }
+
+      // Send AJAX request to update cart
+      $.ajax({
+        url: '/cart/change.js',
+        type: 'POST',
+        data: {
+          line: line,
+          quantity: quantity
+        },
+        dataType: 'json',
+        success: function (cart) {
+          // Update cart subtotal dynamically
+          const newSubtotal = (cart.items_subtotal_price / 100).toFixed(2);
+          $('#cart-subtotal').text('$' + newSubtotal);
+
+          // Optionally update individual item prices or other UI elements
+          console.log('Cart updated:', cart);
+        },
+        error: function (error) {
+          console.error('Error updating cart:', error);
+        }
+      });
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "t:sections.main-cart-items.name",
