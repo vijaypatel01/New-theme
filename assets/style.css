@@ -32,10 +32,7 @@
 
 /* Announcement Bar css */
 /* start product card css */
-.grid{
-  display:grid;
-}
-.grid--4-col li.card-product-column{
+.flex--4-col li.card-product-column{
   width: calc(25% - var(--product-card-gap) * 3 / 4);
 }
 /* end product card css */
