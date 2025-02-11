@@ -1,6 +1,6 @@
 <div class="featured-collection-product-section">
   <div class="page-width">
-    <div class="featured-collection-product-row card-product-row card-product-row">
+    <div class="featured-collection-product-row card-product-row grid--{{ section.settings.product-columns }}-col">
       {% if section.settings.collection and section.settings.collection.products.size > 0 %}
         {% for product in section.settings.collection.products %}
           {% render 'card-product',product:product %}
@@ -21,7 +21,7 @@
       },
       {
         "type": "range",
-        "id": "product-card-column",
+        "id": "product-columns",
         "label": "Product Card Column",
         "min": 0,
         "max": 6,
