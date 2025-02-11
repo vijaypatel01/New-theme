@@ -32,4 +32,7 @@
 
 /* Announcement Bar css */
 /* start product card css */
+.grid{
+  display:grid;
+}
 /* end product card css */
