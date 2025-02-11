@@ -10,6 +10,14 @@
 {
 
   "sections": {
-    
+    "cart":{
+      "headings": {
+        "product": "Product",
+        "price": "Price",
+        "total": "Total",
+        "quantity": "Quantity",
+        "image": "Product image"
+      }
+    }
   }
 }
