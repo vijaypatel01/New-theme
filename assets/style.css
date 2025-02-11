@@ -52,6 +52,9 @@
 .flex-wrap{
   flex-wrap:wrap;
 }
+.align-items-center{
+  align-items:center;
+}
 /* Announcement Bar css */
 
 /* Announcement Bar css */
