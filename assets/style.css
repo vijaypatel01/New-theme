@@ -1,4 +1,7 @@
 /* common css */
+*{
+  box-sizing:border-box;
+}
 .page-width{
   max-width:var(--page-width);
   margin:0 auto;
