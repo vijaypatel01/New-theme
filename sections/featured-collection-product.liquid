@@ -1,14 +1,14 @@
 <div class="featured-collection-product-section">
   <div class="page-width">
     <div class="featured-collection-product-row">
-      <div class="featured-collection-product-column">
-        {% for product in section.settings.collection.products %}
+      {% for product in section.settings.collection.products %}
+        <div class="featured-collection-product-column">
           <div class="image-block">
             <img src="{{ product.featured_image | img_url }}">
           </div>
           <h3>{{ product.title | link_to_tag }}</h3>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
