@@ -26,7 +26,6 @@
           <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
             <td class="cart-item__media">
               {% if item.image %}
-                {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                 <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                 <div class="cart-item__image-container gradient global-media-settings">
                   <img
@@ -185,9 +184,6 @@
                     {%- endif -%}
                     <quantity-input class="quantity cart-quantity">
                       <button class="quantity__button" name="minus" type="button">
-                        <span class="visually-hidden">
-                          {{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}
-                        </span>
                         <span class="svg-wrapper">
                           {{- 'icon-minus.svg' | inline_asset_content -}}
                         </span>
@@ -212,9 +208,6 @@
                         data-index="{{ item.index | plus: 1 }}"
                       >
                       <button class="quantity__button" name="plus" type="button">
-                        <span class="visually-hidden">
-                          {{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}
-                        </span>
                         <span class="svg-wrapper">
                           {{- 'icon-plus.svg' | inline_asset_content -}}
                         </span>
