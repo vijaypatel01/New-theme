@@ -2,7 +2,7 @@
   <div class="page-width">
     <div class="product-block">
       {% assign product = section.settings.product %}
-      <h3><a class="{{ product.url }}">{{ product.title }}</a></h3>
+      <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
       <p>{{ product.price | money }}</p>
       <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
       <input type="hidden" name="id" value="{{ product.variants.first.id }}">
