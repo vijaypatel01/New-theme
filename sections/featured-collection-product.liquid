@@ -1,7 +1,7 @@
 <div class="featured-collection-product-section">
   <div class="page-width">
     <div class="featured-collection-product-row">
-      <ul class="card-product-row grid--{{ section.settings.product-columns }}-col">
+      <ul class="card-product-row grid grid--{{ section.settings.product-columns }}-col">
         {% assign limit = section.settings.product-columns %}
         {% for product in section.settings.collection.products limit:limit %}
           <li class="featured-collection-product-column card-product-column">
