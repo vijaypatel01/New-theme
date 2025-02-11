@@ -35,7 +35,7 @@
 .grid{
   display:grid;
 }
-.grid--4-col li{
-  width:calc((100%/4) - ((var(--product-card-gap))/4*3));
+.grid--4-col li.card-product-column{
+  width: calc(25% - var(--product-card-gap) * 3 / 4);
 }
 /* end product card css */
