@@ -74,38 +74,38 @@
               endif
             -%}
             <td class="cart-item__quantity{% if has_qty_rules or has_vol_pricing %} cart-item__quantity--info{% endif %}">
-                  <div class="quantity-popover-container{% if has_qty_rules or has_vol_pricing %} quantity-popover-container--hover{% endif %}">
-                    <quantity-input class="quantity cart-quantity">
-                      <input
-                        class="cart-item__quantity-input"
-                        type="number"
-                        size="2"
-                        id="updates_{{ forloop.index }}"
-                        name="updates[]"
-                        value="{{ item.quantity }}"
-                        data-initial-value="{{ item.quantity }}"
-                        data-line="{{ forloop.index }}"
-                        {% if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny' %}
-                          data-max="{{ item.variant.inventory_quantity }}"
-                        {% endif %}
-                        aria-label="quantity"
-                      >
-                    </quantity-input>
-                  </div>
-                  <cart-remove-button
-                    id="Remove-{{ item.index | plus: 1 }}"
-                    data-index="{{ item.index | plus: 1 }}"
+              <div class="quantity-popover-container{% if has_qty_rules or has_vol_pricing %} quantity-popover-container--hover{% endif %}">
+                <quantity-input class="quantity cart-quantity">
+                  <input
+                    class="cart-item__quantity-input"
+                    type="number"
+                    size="2"
+                    id="updates_{{ forloop.index }}"
+                    name="updates[]"
+                    value="{{ item.quantity }}"
+                    data-initial-value="{{ item.quantity }}"
+                    data-line="{{ forloop.index }}"
+                    {% if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny' %}
+                      data-max="{{ item.variant.inventory_quantity }}"
+                    {% endif %}
+                    aria-label="quantity"
                   >
-                    <a
-                      href="{{ item.url_to_remove }}"
-                      class="button button--tertiary"
-                      aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
-                    >
-                      <span class="svg-wrapper">
-                        {{- 'icon-remove.svg' | inline_asset_content -}}
-                      </span>
-                    </a>
-                  </cart-remove-button>
+                </quantity-input>
+              </div>
+              <cart-remove-button
+                id="Remove-{{ item.index | plus: 1 }}"
+                data-index="{{ item.index | plus: 1 }}"
+              >
+                <a
+                  href="{{ item.url_to_remove }}"
+                  class="button button--tertiary"
+                  aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
+                >
+                  <span class="svg-wrapper">
+                    {{- 'icon-remove.svg' | inline_asset_content -}}
+                  </span>
+                </a>
+              </cart-remove-button>
             </td>
             <td class="cart-item__totals">
               <div class="cart-item__price-wrapper">
