@@ -1,4 +1,5 @@
-<form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
+<div class="page-width">
+  <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
   {%- if cart != empty -%}
     <table class="cart-items">
       <thead>
@@ -114,6 +115,7 @@
     </table>
   {% endif %}
 </form>
+</div>
 {% schema %}
 {
   "name": "t:sections.main-cart-items.name",
