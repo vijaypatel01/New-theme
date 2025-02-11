@@ -25,7 +25,7 @@
       <tbody>
         {%- for item in cart.items -%}
           <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
-            <td class="cart-item__media">
+            <td class="cart-item__media" colspan="2" scope="col">
               {% if item.image %}
                 <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                 <div class="cart-item__image-container gradient global-media-settings">
@@ -41,7 +41,7 @@
               {% endif %}
             </td>
   
-            <td class="cart-item__details">
+            <td class="cart-item__details" colspan="1" scope="col">
               {%- if item.original_price != item.final_price -%}
                 <div class="cart-item__discounted-prices">
                   <s class="cart-item__old-price product-option">
@@ -65,7 +65,7 @@
                 assign has_vol_pricing = true
               endif
             -%}
-            <td class="cart-item__quantity{% if has_qty_rules or has_vol_pricing %} cart-item__quantity--info{% endif %}">
+            <td class="cart-item__quantity{% if has_qty_rules or has_vol_pricing %} cart-item__quantity--info{% endif %}" colspan="1" scope="col">
               <div class="quantity-popover-container{% if has_qty_rules or has_vol_pricing %} quantity-popover-container--hover{% endif %}">
                 <quantity-input class="quantity cart-quantity">
                   <input
@@ -99,7 +99,7 @@
                 </a>
               </cart-remove-button>
             </td>
-            <td class="cart-item__totals">
+            <td class="cart-item__totals" colspan="1" scope="col">
               <div class="cart-item__price-wrapper">
                 <span class="price-currency">
                   {{ cart.currency.symbol }}
