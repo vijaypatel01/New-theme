@@ -104,7 +104,7 @@
                 <span class="price-currency">
                   {{ cart.currency.symbol }}
                 </span>
-                <span class="price price--end cart-total">
+                <span class="cart-item-total">
                   {{ cart.total_price | money }}
                 </span>
               </div>
@@ -135,7 +135,7 @@
         dataType: 'json',
         success: function (cart) {
           const newSubtotal = (cart.items_subtotal_price / 100).toFixed(2);
-          $('.cart-total').text(newSubtotal);
+          $('.cart-item-total').text(newSubtotal);
           console.log('Cart updated:', cart);
         },
         error: function (error) {
