@@ -1,3 +1,7 @@
+<form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
+  <table class="cart-items">
+  </table>
+</form>
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link">
