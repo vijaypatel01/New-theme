@@ -43,18 +43,9 @@
             <td class="cart-item__details">
               {%- if item.original_price != item.final_price -%}
                 <div class="cart-item__discounted-prices">
-                  <span class="visually-hidden">
-                    {{ 'products.product.price.regular_price' | t }}
-                  </span>
                   <s class="cart-item__old-price product-option">
                     {{- item.original_price | money -}}
                   </s>
-                  <span class="visually-hidden">
-                    {{ 'products.product.price.sale_price' | t }}
-                  </span>
-                  <strong class="cart-item__final-price product-option">
-                    {{ item.final_price | money }}
-                  </strong>
                 </div>
               {%- else -%}
                 <div class="product-option">
