@@ -10,6 +10,9 @@
 {
 
   "sections": {
+    "main-cart-items":{
+      "name":"Main Cart Items"
+    },
     "cart":{
       "headings": {
         "product": "Product",
