@@ -1,6 +1,19 @@
+{{ block.settings.heading }}
 {% schema %}
   {
-    "name": "Block name",
-    "settings": []
+    "name": "Description",
+    "settings": [
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default":"heading"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Heading"
+      }
+    ]
   }
 {% endschema %}
