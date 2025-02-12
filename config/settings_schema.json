@@ -66,20 +66,5 @@
         "default":"1200px"
       }
     ]
-  },
-  {
-    "name": "Product Card",
-    "settings": [
-      {
-        "type": "range",
-        "id": "product-card-gap",
-        "label": "Product Card gap",
-        "min": 0,
-        "max": 100,
-        "default":20,
-        "step": 1,
-        "unit": "px"
-      }
-    ]
   }
 ]
