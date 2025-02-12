@@ -45,14 +45,14 @@
           >
         {%- endif -%}
       </div>
-      <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
-      <p>{{ product.price | money }}</p>
-      <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
-      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-      <div>
-      <button type="submit" name="add">Add to cart</button>
+      <div class="text-block">
+        <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
+        <p>{{ product.price | money }}</p>
+        <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+          <button type="submit" name="add">Add to cart</button>
+        </form>
       </div>
-      </form>
     </div>
   </div>
 </div>
