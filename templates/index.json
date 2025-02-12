@@ -11,6 +11,15 @@
   "sections": {
     "image-banner": {
       "type": "image-banner",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "static": true,
+          "settings": {
+            "image": "shopify://shop_images/collection-category-5.png"
+          }
+        }
+      },
       "settings": {}
     },
     "featured_product_n4hfzL": {
@@ -22,7 +31,8 @@
     "featured_collection_product_mwbRpi": {
       "type": "featured-collection-product",
       "settings": {
-        "collection": "vans"
+        "collection": "vans",
+        "product-columns": 4
       }
     }
   },
