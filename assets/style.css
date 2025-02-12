@@ -69,5 +69,6 @@
 /* start product card css */
 .flex--4-col li.card-product-column{
   width: calc(25% - var(--product-card-gap) * 3 / 4);
+  flex-grow:1;
 }
 /* end product card css */
