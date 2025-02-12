@@ -122,7 +122,6 @@
       const line = $(this).data('line');
       const quantity = $(this).val();
       if (quantity < 1) {
-        alert('Quantity must be at least 1.');
         return;
       }
       $.ajax({
