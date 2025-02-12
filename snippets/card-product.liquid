@@ -19,9 +19,7 @@
     width="{{ product.featured_media.width }}"
     height="{{ product.featured_media.height }}"
   >
-  {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-
-  {%- if product.media[1] != null and show_secondary_image -%}
+  {%- if product.media[1] != null -%}
     <img
       srcset="
         {%- if product.media[1].width >= 165 -%}{{ product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
