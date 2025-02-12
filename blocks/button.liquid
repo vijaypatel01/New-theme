@@ -1,9 +1,21 @@
-<a class="button{% if block.settings.url != blank %} button-linked{% else %} button-unlinked{% endif %}">button label</a>
+<a href="{{ block.settings.button-url }}" class="button{% if block.settings.button-url != blank %} button-linked{% else %} button-unlinked{% endif %}">
+  {{ block.settings.button-text }}
+</a>
 {% schema %}
   {
     "name": "Button",
     "settings": [
-      
+      {
+        "type": "text",
+        "id": "button-text",
+        "label": "Button Text",
+        "default":"Button Label"
+      },
+      {
+        "type": "url",
+        "id": "button-url",
+        "label": "Button Url"
+      }
     ],
     "presets": [
       {
