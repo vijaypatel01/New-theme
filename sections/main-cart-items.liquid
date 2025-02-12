@@ -25,10 +25,10 @@
       <tbody>
         {%- for item in cart.items -%}
           <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
-            <td class="cart-item__media" colspan="2" scope="col">
+            <td class="cart-item-image" colspan="2" scope="col">
               {% if item.image %}
                 <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
-                <div class="cart-item__image-container gradient global-media-settings">
+                <div class="cart-item__image-container">
                   <img
                     src="{{ item.image | image_url: width: 300 }}"
                     class="cart-item__image"
@@ -46,7 +46,7 @@
               >
                 <a
                   href="{{ item.url_to_remove }}"
-                  class="button button--tertiary"
+                  class="button"
                   aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
                 >
                   <span>remove</span>
@@ -59,10 +59,8 @@
   
             <td class="cart-item__details" colspan="1" scope="col">
               {%- if item.original_price != item.final_price -%}
-                <div class="cart-item__discounted-prices">
-                  <s class="cart-item__old-price product-option">
+                <div class="cart-item-price">
                     {{ cart.currency.symbol }}{{- item.original_price | money_without_currency -}}
-                  </s>
                 </div>
               {%- else -%}
                 <div class="product-option">
