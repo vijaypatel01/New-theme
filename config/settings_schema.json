@@ -40,7 +40,7 @@
         "min": 4,
         "max": 40,
         "step": 4,
-        "default": 8,
+        "default": 20,
         "unit": "px",
         "label": "Spacing Grid Horizontal"
       },
@@ -50,7 +50,7 @@
         "min": 4,
         "max": 40,
         "step": 4,
-        "default": 8,
+        "default": 20,
         "unit": "px",
         "label": "Spacing Grid Vertical"
       }
