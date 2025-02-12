@@ -1,4 +1,4 @@
-{{ block.settings.description }}
+{{ block.settings.description | camelcase }}
 {% schema %}
   {
     "name": "Description",

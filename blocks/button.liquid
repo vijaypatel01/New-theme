@@ -1,5 +1,5 @@
 <a href="{{ block.settings.button-url }}" class="button{% if block.settings.button-url != blank %} button-linked{% else %} button-unlinked{% endif %}">
-  {{ block.settings.button-text }}
+  {{ block.settings.button-text | camelcase }}
 </a>
 {% schema %}
   {
