@@ -105,7 +105,7 @@
                   {{ cart.currency.symbol }}
                 </span>
                 <span class="cart-item-total">
-                  {{ cart.total_price | money }}
+                  {{ cart.total_price | money_without_currency }}
                 </span>
               </div>
             </td>
