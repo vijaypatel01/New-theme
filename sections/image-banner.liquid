@@ -1,7 +1,9 @@
 <div class="image-banner-section">
   <div class="page-width">
     <div class="image-banner-row">
-      <div class="image-block-column"></div>
+      <div class="image-block-column">
+        {% content_for 'block',type: "image", id: "image" %}
+      </div>
       <div class="text-block-column">
         <h3></h3>
         {{ block.settings.description }}
@@ -14,6 +16,7 @@
   {
     "name": "Image Banner",
     "settings": [],
+    "blocks": [{"type": "@theme"},{"type": "image"}],
     "presets": [
       {
         "name": "Image Banner"
