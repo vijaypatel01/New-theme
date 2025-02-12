@@ -1,6 +1,14 @@
+<a class="button{% if block.settings.url != blank %} button-linked{% else %} button-unlinked{% endif %}">button label</a>
 {% schema %}
   {
-    "name": "Block name",
-    "settings": []
+    "name": "Button",
+    "settings": [
+      
+    ],
+    "presets": [
+      {
+        "name": "Button"
+      }
+    ]
   }
 {% endschema %}
