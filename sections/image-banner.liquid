@@ -5,9 +5,9 @@
         {% content_for 'block',type: "image", id: "image" %}
       </div>
       <div class="text-block-column w-50">
-        <h3></h3>
-        {{ block.settings.description }}
-        <a class="button{% if block.settings.url != blank %} button-linked{% else %} button-unlinked{% endif %}">button label</a>
+        {% content_for 'block',type: "heading", id: "heading" %}
+        {% content_for 'block',type: "description", id: "description" %}
+        {% content_for 'block',type: "button", id: "button" %}
       </div>
     </div>
   </div>
