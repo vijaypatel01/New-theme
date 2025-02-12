@@ -29,6 +29,30 @@
         "type": "image_picker",
         "id": "favicon",
         "label": "Select Favicon Image"
+      },
+      {
+        "type": "header",
+        "content": "Layout Spacing"
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_horizontal",
+        "min": 4,
+        "max": 40,
+        "step": 4,
+        "default": 8,
+        "unit": "px",
+        "label": "Spacing Grid Horizontal"
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_vertical",
+        "min": 4,
+        "max": 40,
+        "step": 4,
+        "default": 8,
+        "unit": "px",
+        "label": "Spacing Grid Vertical"
       }
     ]
   },
