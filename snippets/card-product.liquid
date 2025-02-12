@@ -45,6 +45,7 @@
 <h3>
   <a href="{{ product.url }}">{{ product.title }}</a>
 </h3>
+<span>{{ product.price | money }}</span>
 <product-form data-section-id="{{ section.id }}">
   {%- form 'product',
     product,
