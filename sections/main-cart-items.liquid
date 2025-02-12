@@ -136,11 +136,7 @@
         success: function (cart) {
           const newSubtotal = (cart.items_subtotal_price / 100).toFixed(2);
           $('.cart-item-total').text(newSubtotal);
-          console.log('Cart updated:', cart);
         },
-        error: function (error) {
-          console.error('Error updating cart:', error);
-        }
       });
     });
   });
