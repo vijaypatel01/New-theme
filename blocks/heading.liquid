@@ -1,7 +1,15 @@
+<h2>{{ block.settings.heading }}</h2>
 {% schema %}
   {
     "name": "Heading",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default":"heading"
+      }
+    ],
     "presets": [
       {
         "name": "Heading"
