@@ -1,6 +1,13 @@
 <div class="image-banner-section">
   <div class="page-width">
-    <p>Image Banner</p>
+    <div class="image-banner-row">
+      <div class="image-block-column"></div>
+      <div class="text-block-column">
+        <h3></h3>
+        {{ block.settings.description }}
+        <a class="button{% if block.settings.url != blank %} button-linked{% else %} button-unlinked{% endif %}">button label</a>
+      </div>
+    </div>
   </div>
 </div>
 {% schema %}
