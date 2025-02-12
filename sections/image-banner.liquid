@@ -1,10 +1,10 @@
 <div class="image-banner-section">
   <div class="page-width">
-    <div class="image-banner-row">
-      <div class="image-block-column">
+    <div class="image-banner-row flex">
+      <div class="image-block-column w-50">
         {% content_for 'block',type: "image", id: "image" %}
       </div>
-      <div class="text-block-column">
+      <div class="text-block-column w-50">
         <h3></h3>
         {{ block.settings.description }}
         <a class="button{% if block.settings.url != blank %} button-linked{% else %} button-unlinked{% endif %}">button label</a>
