@@ -128,7 +128,7 @@ a{
   padding-bottom:var(--section-padding-bottom);
 }
 .w-sm-50{
-  width:50%;
+  width:calc(50% - var(--column-gap)/ 2);
 }
 /* Announcement Bar css */
 
@@ -168,7 +168,7 @@ li.card-product-column .image-block img{
 }
 @media (max-width:768px){
   .w-sm-50{
-    width:50%;
+    width:calc(50% - var(--column-gap)/ 2);
   }
   .flex--4-col li.card-product-column{
     width: calc(50% - var(--column-gap)/ 2);
