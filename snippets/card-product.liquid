@@ -40,11 +40,12 @@
     >
   {%- endif -%}
 </div>
-<h3>
-  <a href="{{ product.url }}">{{ product.title | capitalize }}</a>
-</h3>
-<span>{{ product.price | money }}</span>
-<product-form data-section-id="{{ section.id }}">
+<div class="text-block flex flex-wrap gap">
+  <h3>
+    <a href="{{ product.url }}">{{ product.title | capitalize }}</a>
+  </h3>
+  <span>{{ product.price | money }}</span>
+  <product-form data-section-id="{{ section.id }}">
   {%- form 'product',
     product,
     id: product_form_id,
@@ -84,3 +85,4 @@
     </button>
   {%- endform -%}
 </product-form>
+</div>
