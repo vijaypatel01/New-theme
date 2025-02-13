@@ -24,7 +24,10 @@
         }
       },
       "layout":{
-        "name":"Layout"
+        "name":"Layout",
+        "page-width":{
+          "name":"Page Width",
+        }
       },
       "section-padding":{
         "name":"Section Padding",
