@@ -1,3 +1,11 @@
+{% style %}
+  .image-banner-section{
+    background:{{ section.settings.section-background-color }};
+  }
+  .image-banner-section .image-banner-row{
+    background:{{ section.settings.container-background-color }};
+  }
+{% endstyle %}
 <div class="image-banner-section">
   <div class="page-width">
     <div class="image-banner-row flex align-items-normal gap">
