@@ -68,12 +68,12 @@
     ]
   },
   {
-    "name": "Section Padding",
+    "name": "t:sections.all.section-padding.name",
     "settings": [
       {
         "type": "range",
         "id": "section-padding-top",
-        "label": "Padding Top",
+        "label": "t:sections.all.section-padding.padding.padding-top",
         "default":40,
         "max": 100,
         "min": 0,
@@ -82,7 +82,7 @@
       },
       {
         "type": "range",
-        "id": "section-padding-bottom",
+        "id": "t:sections.all.section-padding.padding.padding-bottom",
         "label": "Padding Bottom",
         "default":40,
         "max": 100,
