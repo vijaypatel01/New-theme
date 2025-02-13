@@ -1,8 +1,8 @@
 <div class="featured-product-section">
   <div class="page-width">
-    <div class="product-block">
+    <div class="product-block flex flex-wrap align-items-center gap">
       {% assign product = section.settings.product %}
-      <div class="image-block">
+      <div class="image-block w-50">
         <img
           srcset="
             {%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
@@ -45,7 +45,7 @@
           >
         {%- endif -%}
       </div>
-      <div class="text-block">
+      <div class="text-block w-50">
         <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
         <p>{{ product.price | money }}</p>
         <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
