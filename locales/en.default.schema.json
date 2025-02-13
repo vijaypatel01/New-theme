@@ -12,6 +12,7 @@
   "sections": {
     "all":{
       "logo":{
+        "name":"Logo",
         "logo":{
           "name":"Logo"
         },
