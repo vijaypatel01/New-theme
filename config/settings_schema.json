@@ -79,6 +79,16 @@
         "min": 0,
         "step": 1,
         "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "section-padding-bottom",
+        "label": "Section Padding Bottom",
+        "default":40,
+        "max": 100,
+        "min": 0,
+        "step": 1,
+        "unit": "px"
       }
     ]
   }
