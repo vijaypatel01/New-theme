@@ -160,6 +160,10 @@ li.card-product-column .image-block img{
     width: calc(50% - var(--column-gap)/ 2);
     flex-grow:1;
   }
+  .flex--3-col li.card-product-column{
+    width: calc(50% - var(--column-gap)/ 2);
+    flex-grow:1;
+  }
 }
 @media (max-width:576px){
   .w-100{
