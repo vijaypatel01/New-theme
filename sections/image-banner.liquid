@@ -15,7 +15,24 @@
 {% schema %}
   {
     "name": "Image Banner",
-    "settings": [],
+    "settings": [
+      {
+        "type": "select",
+        "id": "layout",
+        "options": [
+          {
+            "value": "full_bleed",
+            "label": "Full Width"
+          },
+          {
+            "value": "grid",
+            "label": "Grid"
+          }
+        ],
+        "default": "full_bleed",
+        "label": "Layout"
+      }
+    ],
     "blocks": [{"type": "@theme"},{"type": "image"}],
     "presets": [
       {
