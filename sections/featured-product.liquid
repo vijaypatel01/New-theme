@@ -11,7 +11,7 @@
           height="{{ product.featured_media.height }}"
         >
       </div>
-      <div class="text-block w-100 w-sm-50 flex flex-wrap flex-d-column justify-content-center">
+      <div class="text-block gap w-100 w-sm-50 flex flex-wrap flex-d-column justify-content-center">
         <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
         <p>{{ product.price | money }}</p>
         <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
