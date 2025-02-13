@@ -27,6 +27,9 @@
         "name":"Layout",
         "page-width":{
           "name":"Page Width",
+        },
+        "layout-spacing":{
+          "name":"Layout Spacing",
         }
       },
       "section-padding":{
