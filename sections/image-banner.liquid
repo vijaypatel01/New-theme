@@ -12,7 +12,7 @@
       <div class="image-block-column w-50">
         {% content_for 'block',type: "image", id: "image" %}
       </div>
-      <div class="text-block-column w-50">
+      <div class="text-block-column w-50 flex flex-wrap flex-d-column justify-content-center">
         {% content_for 'block',type: "heading", id: "heading" %}
         {% content_for 'block',type: "description", id: "description" %}
         {% content_for 'block',type: "button", id: "button" %}
