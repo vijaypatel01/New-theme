@@ -18,7 +18,6 @@
     <meta name="description" content="{{ page_description | escape }}">
     {{ content_for_header }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {%- if cart != empty -%}
       <script src="{{ 'cart.min.js' | asset_url }}"></script>
     {% endif %}
