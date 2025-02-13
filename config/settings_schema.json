@@ -43,7 +43,7 @@
       },
       {
         "type": "header",
-        "content": "Layout Spacing"
+        "content": "t:sections.all.layout.layout-spacing.name"
       },
       {
         "type": "range",
@@ -53,7 +53,7 @@
         "step": 4,
         "default": 20,
         "unit": "px",
-        "label": "Spacing Grid Horizontal"
+        "label": "t:sections.all.layout.spacing_grid_horizontal.name"
       },
       {
         "type": "range",
@@ -63,7 +63,7 @@
         "step": 4,
         "default": 20,
         "unit": "px",
-        "label": "Spacing Grid Vertical"
+        "label": "t:sections.all.layout.spacing_grid_vertical.name"
       }
     ]
   },
