@@ -66,6 +66,9 @@ a{
 .w-50{
   width:calc(50% - var(--column-gap)/ 2);
 }
+.w-100{
+  width:100%;
+}
 .w-auto{
   width:auto;
 }
