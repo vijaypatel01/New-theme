@@ -30,6 +30,12 @@
         },
         "layout-spacing":{
           "name":"Layout Spacing",
+        },
+        "spacing_grid_horizontal":{
+          "name":"Spacing Grid Horizontal",
+        },
+        "spacing_grid_vertical":{
+          "name":"Spacing Grid Vertical",
         }
       },
       "section-padding":{
