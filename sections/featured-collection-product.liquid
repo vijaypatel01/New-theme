@@ -2,7 +2,7 @@
   <div class="page-width">
     <h2>{{ section.settings.heading }}</h2>
     <div class="featured-collection-product-row">
-      <ul class="card-product-row flex flex--{{ section.settings.product-columns }}-col list-unstyled gap">
+      <ul class="card-product-row flex flex--{{ section.settings.product-columns }}-col flex-grow-1 list-unstyled gap">
         {% assign limit = section.settings.product-columns %}
         {% for product in section.settings.collection.products limit:limit %}
           <li class="featured-collection-product-column card-product-column">
