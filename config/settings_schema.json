@@ -28,7 +28,7 @@
       {
         "type": "image_picker",
         "id": "favicon",
-        "label": "Select Favicon Image"
+        "label": "t:sections.all.logo.favicon.name"
       }
     ]
   },
