@@ -18,9 +18,34 @@
           "settings": {
             "image": "shopify://shop_images/collection-category-5.png"
           }
+        },
+        "heading": {
+          "type": "heading",
+          "static": true,
+          "settings": {
+            "heading": "heading"
+          }
+        },
+        "description": {
+          "type": "description",
+          "static": true,
+          "settings": {
+            "description": "<p>Give customers details about the banner image(s) or content on the template.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "static": true,
+          "settings": {
+            "button-text": "Button Label",
+            "button-url": ""
+          }
         }
       },
-      "settings": {}
+      "settings": {
+        "section-background-color": "#f5f5f5",
+        "container-background-color": "none"
+      }
     },
     "featured_product_n4hfzL": {
       "type": "featured-product",
@@ -31,6 +56,7 @@
     "featured_collection_product_mwbRpi": {
       "type": "featured-collection-product",
       "settings": {
+        "heading": "Featured Product",
         "collection": "vans",
         "product-columns": 4
       }
