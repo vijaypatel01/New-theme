@@ -13,7 +13,7 @@
       {
         "type": "image_picker",
         "id": "logo",
-        "label": "Select Logo"
+        "label": "t:sections.all.logo.logo.name"
       },
       {
         "type": "range",
