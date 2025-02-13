@@ -23,7 +23,7 @@
         "step": 10,
         "default": 100,
         "unit": "px",
-        "label": "Logo Width"
+        "label": "t:sections.all.logo.logo_width.name"
       },
       {
         "type": "image_picker",
