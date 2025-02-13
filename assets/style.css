@@ -2,10 +2,18 @@
 *{
   box-sizing:border-box;
 }
+.page-width{
+  max-width:var(--page-width);
+  margin:0 auto;
+  padding:0 15px;
+}
 img{
   width:100%;
   height:100%;
   object-fit:cover;
+}
+a{
+  display:inline-block;
 }
 .gap{
   column-gap:var(--column-gap);
@@ -15,11 +23,6 @@ img{
   list-style:none;
   padding:0;
   margin:0;
-}
-.page-width{
-  max-width:var(--page-width);
-  margin:0 auto;
-  padding:0 15px;
 }
 .position-absolute{
   position:absolute;
@@ -111,6 +114,11 @@ img{
 }
 .section-padding-bottom{
   padding-bottom:var(--section-padding-bottom);
+}
+.svg-wrapper{
+  width:22px;
+  height:22px;
+  display:inline-block;
 }
 /* Announcement Bar css */
 
