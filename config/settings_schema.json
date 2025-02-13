@@ -33,12 +33,12 @@
     ]
   },
   {
-    "name": "Layout",
+    "name": "t:sections.all.layout.name",
     "settings": [
       {
         "type": "text",
         "id": "page-width",
-        "label": "Page Width",
+        "label": "t:sections.all.layout.page-width.name",
         "default":"1200px"
       },
       {
