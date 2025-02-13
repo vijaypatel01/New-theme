@@ -17,6 +17,8 @@ img{
 }
 a{
   display:inline-block;
+  text-decoration:none;
+  color:#000;
 }
 .svg-wrapper{
   width:22px;
