@@ -102,6 +102,16 @@ img{
 .align-items-normal{
   align-items:normal;
 }
+.section-padding{
+  padding-top:var(--section-padding-top);
+  padding-bottom:var(--section-padding-bottom);
+}
+.section-padding-top{
+  padding-top:var(--section-padding-top);
+}
+.section-padding-bottom{
+  padding-bottom:var(--section-padding-bottom);
+}
 /* Announcement Bar css */
 
 /* Announcement Bar css */
