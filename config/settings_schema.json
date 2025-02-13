@@ -29,6 +29,17 @@
         "type": "image_picker",
         "id": "favicon",
         "label": "Select Favicon Image"
+      }
+    ]
+  },
+  {
+    "name": "Page Width",
+    "settings": [
+      {
+        "type": "text",
+        "id": "page-width",
+        "label": "Page Width",
+        "default":"1200px"
       },
       {
         "type": "header",
@@ -53,17 +64,6 @@
         "default": 20,
         "unit": "px",
         "label": "Spacing Grid Vertical"
-      }
-    ]
-  },
-  {
-    "name": "Page Width",
-    "settings": [
-      {
-        "type": "text",
-        "id": "page-width",
-        "label": "Page Width",
-        "default":"1200px"
       }
     ]
   },

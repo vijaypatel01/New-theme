@@ -11,6 +11,17 @@
 
   "sections": {
     "all":{
+      "logo":{
+        "logo":{
+          "name":"Logo"
+        },
+        "logo_width":{
+          "name":"Logo Width"
+        },
+        "favicon":{
+          "name":"Select Favicon Image"
+        }
+      },
       "section-padding":{
         "name":"Section Padding",
         "padding":{
