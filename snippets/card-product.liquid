@@ -41,7 +41,7 @@
   {%- endif -%}
 </div>
 <h3>
-  <a href="{{ product.url }}">{{ product.title }}</a>
+  <a href="{{ product.url }}">{{ product.title | capitalize }}</a>
 </h3>
 <span>{{ product.price | money }}</span>
 <product-form data-section-id="{{ section.id }}">
