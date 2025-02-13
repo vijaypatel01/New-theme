@@ -10,6 +10,15 @@
 {
 
   "sections": {
+    "all":{
+      "section-padding":{
+        "name":"Section Padding",
+        "padding":{
+          "padding-top":"Padding Top",
+          "padding-bottom":"Padding Bottom"
+        }
+      }
+    },
     "header":{
       "name":"Header"
     },
