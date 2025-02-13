@@ -82,8 +82,8 @@
       },
       {
         "type": "range",
-        "id": "t:sections.all.section-padding.padding.padding-bottom",
-        "label": "Padding Bottom",
+        "id": "section-padding-bottom",
+        "label": "t:sections.all.section-padding.padding.padding-bottom",
         "default":40,
         "max": 100,
         "min": 0,
