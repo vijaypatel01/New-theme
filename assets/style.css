@@ -99,6 +99,9 @@ a{
 .flex-wrap{
   flex-wrap:wrap;
 }
+.flex-grow-1{
+  flex-grow:1;
+}
 .align-items-center{
   align-items:center;
 }
@@ -130,19 +133,15 @@ a{
 /* start product card css */
 .flex--4-col li.card-product-column{
   width: calc(25% - var(--column-gap) * 3 / 4);
-  flex-grow:1;
 }
 .flex--3-col li.card-product-column{
   width: calc(33.33% - var(--column-gap) * 2 / 3);
-  flex-grow:1;
 }
 .flex--2-col li.card-product-column{
   width: calc(50% - var(--column-gap)/ 2);
-  flex-grow:1;
 }
 .flex--1-col li.card-product-column{
   width: 100%;
-  flex-grow:1;
 }
 li.card-product-column .image-block{
   padding-bottom:100%;
@@ -170,15 +169,12 @@ li.card-product-column .image-block img{
   }
   .flex--4-col li.card-product-column{
     width: calc(50% - var(--column-gap)/ 2);
-    flex-grow:1;
   }
   .flex--3-col li.card-product-column{
     width: calc(50% - var(--column-gap)/ 2);
-    flex-grow:1;
   }
   .flex--2-col li.card-product-column{
     width: calc(50% - var(--column-gap)/ 2);
-    flex-grow:1;
   }
 }
 @media (max-width:576px){
@@ -187,6 +183,5 @@ li.card-product-column .image-block img{
   }
   .flex--4-col li.card-product-column,.flex--3-col li.card-product-column,.flex--2-col li.card-product-column{
     width: 100%;
-    flex-grow:1;
   }
 }
