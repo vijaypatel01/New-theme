@@ -173,7 +173,7 @@ li.card-product-column .image-block img{
   .w-100{
     width:100%;
   }
-  .flex--4-col li.card-product-column{
+  .flex--4-col li.card-product-column,.flex--3-col li.card-product-column{
     width: 100%;
     flex-grow:1;
   }
