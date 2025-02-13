@@ -2,7 +2,7 @@
   <div class="page-width">
     <div class="product-block flex flex-wrap align-items-center gap">
       {% assign product = section.settings.product %}
-      <div class="image-block w-50">
+      <div class="image-block w-100 w-sm-50">
         <img
           src="{{ product.featured_media | image_url }}"
           alt="{{ product.featured_media.alt | escape }}"
@@ -11,7 +11,7 @@
           height="{{ product.featured_media.height }}"
         >
       </div>
-      <div class="text-block w-50">
+      <div class="text-block w-100 w-sm-50">
         <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
         <p>{{ product.price | money }}</p>
         <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
