@@ -3,7 +3,7 @@
     height:100%;
   }
 {% endstyle %}
-<img src="{{ block.settings.image | image_url }}">
+<img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}">
 {% schema %}
   {
     "name": "image",
