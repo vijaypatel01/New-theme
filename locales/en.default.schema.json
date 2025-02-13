@@ -23,6 +23,9 @@
           "name":"Select Favicon Image"
         }
       },
+      "layout":{
+        "name":"Layout"
+      },
       "section-padding":{
         "name":"Section Padding",
         "padding":{
