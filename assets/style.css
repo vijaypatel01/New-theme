@@ -132,6 +132,10 @@ a{
   width: calc(25% - var(--column-gap) * 3 / 4);
   flex-grow:1;
 }
+.flex--3-col li.card-product-column{
+  width: calc(33.33% - var(--column-gap) * 2 / 3);
+  flex-grow:1;
+}
 li.card-product-column .image-block{
   padding-bottom:100%;
   position:relative;
