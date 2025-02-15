@@ -2,13 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".quick-view-btn").forEach(button => {
         button.addEventListener("click", function () {
             let modalId = this.getAttribute("data-product-id");
-            document.getElementById(modalId).style.display = "flex";
+            let modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "flex";
+                document.body.classList.add("quick-view-modal");
+            }
         });
     });
 
     document.querySelectorAll(".close-btn").forEach(button => {
         button.addEventListener("click", function () {
-            this.closest(".quick-view-modal").style.display = "none";
+            let modal = this.closest(".quick-view-modal");
+            if (modal) {
+                modal.style.display = "none";
+                document.body.classList.remove("quick-view-modal");
+            }
         });
     });
 
@@ -16,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".quick-view-modal").forEach(modal => {
             if (event.target === modal) {
                 modal.style.display = "none";
+                document.body.classList.remove("quick-view-modal");
             }
         });
     });
 });
+
