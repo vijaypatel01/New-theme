@@ -83,19 +83,19 @@
     "settings": [
       {
         "type": "color",
-        "id": "text-color",
+        "id": "button-text-color",
         "label": "Text Color",
         "default":"#fff"
       },
       {
         "type": "color",
-        "id": "bg-color",
+        "id": "button-bg-color",
         "label": "Background Color",
         "default":"#000"
       },
       {
         "type": "range",
-        "id": "font-size",
+        "id": "button-font-size",
         "label": "Font Size",
         "default":18,
         "min": 0,
