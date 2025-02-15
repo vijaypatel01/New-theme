@@ -16,7 +16,7 @@
         <p>{{ product.price | money }}</p>
         <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
           <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-          <button type="submit" name="add">Add to cart</button>
+          <button type="submit" name="add" class="button button-primary">Add to cart</button>
         </form>
       </div>
     </div>
