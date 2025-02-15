@@ -79,6 +79,23 @@
     ]
   },
   {
+    "name": "Button Style",
+    "settings": [
+      {
+        "type": "color",
+        "id": "text-color",
+        "label": "Text Color",
+        "default":"#fff"
+      },
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background Color",
+        "default":"#000"
+      }
+    ]
+  },
+  {
     "name": "t:sections.all.section-padding.name",
     "settings": [
       {
