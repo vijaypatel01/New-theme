@@ -282,6 +282,9 @@ li.card-product-column .image-block img{
 }
 /* end product card css */
 /* start quick view css */
+.quick-view-modal-box{
+  overflow:hidden;
+}
 .quick-view-modal {
   display: none;
   position: fixed;
