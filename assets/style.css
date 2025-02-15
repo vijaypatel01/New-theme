@@ -236,6 +236,9 @@ a{
 .announcement-bar{
   background:#030303;
 }
+.announcement-bar p{
+  color:#fff;
+}
 /* Announcement Bar css */
 /* start product card css */
 .flex--4-col li.card-product-column{
