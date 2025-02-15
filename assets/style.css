@@ -292,6 +292,7 @@ li.card-product-column .image-block img{
   background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  z-index:11;
 }
 
 .modal-content {
