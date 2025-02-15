@@ -4,6 +4,7 @@
     <input
       id="Search"
       type="search"
+      class="border-none background-none"
       name="q"
       value="{{ search.terms | escape }}"
       placeholder="Enter Search"
@@ -15,7 +16,7 @@
       aria-autocomplete="list"
     >
     <input name="options[prefix]" type="hidden" value="last">
-    <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+    <button class="search__button field__button position-absolute border-none background-none" aria-label="{{ 'general.search.search' | t }}">
       <span class="svg-wrapper">
         {{- 'icon-search.svg' | inline_asset_content -}}
       </span>
