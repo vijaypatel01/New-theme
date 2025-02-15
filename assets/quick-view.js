@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    document.querySelectorAll(".close-btn").forEach(button => {
+    document.querySelectorAll(".quick-view-modal .close-btn").forEach(button => {
         button.addEventListener("click", function () {
             let modal = this.closest(".quick-view-modal");
             if (modal) {
