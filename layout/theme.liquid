@@ -23,6 +23,7 @@
     {% endif %}
     <style>
       :root{
+        --font-family:{{ settings.font-family.family }},{{ settings.font-family.fallback_families }};
         --page-width:{{ settings.page-width }};
         --product-card-gap:{{ settings.product-card-gap }}px;
         --row-gap:{{ settings.spacing_grid_horizontal }}px;
