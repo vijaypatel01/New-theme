@@ -74,7 +74,7 @@
         "type": "font_picker",
         "id": "font-family",
         "label": "Font Family",
-        "default": "helvetica_n4"
+        "default": "lobster_two_n4"
       }
     ]
   },
