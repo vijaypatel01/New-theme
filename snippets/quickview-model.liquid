@@ -2,7 +2,17 @@
   <div class="modal-content">
     <span class="close-btn" onclick="closeQuickView()">&times;</span>
     <div id="quick-view-content">
-      <!-- Dynamic Product Content will be loaded here -->
+      <div class="quick-view-product">
+        <img src="{{ product.featured_image | img_url: '400x' }}" alt="{{ product.title }}">
+        <h2>{{ product.title }}</h2>
+        <p>{{ product.price | money }}</p>
+        <p>{{ product.description | truncatewords: 30 }}</p>
+        
+        <form method="post" action="/cart/add">
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+          <button type="submit">Add to Cart</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
