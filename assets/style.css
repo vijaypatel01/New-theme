@@ -233,7 +233,9 @@ a{
   width:calc(50% - var(--column-gap)/ 2);
 }
 /* Announcement Bar css */
-
+.announcement-bar{
+  background:#f5f5f5;
+}
 /* Announcement Bar css */
 /* start product card css */
 .flex--4-col li.card-product-column{
