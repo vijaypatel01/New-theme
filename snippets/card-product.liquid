@@ -85,27 +85,25 @@
     </button>
   {%- endform -%}
 </product-form>
-   document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".quick-view-btn").forEach(button => {
-        button.addEventListener("click", function () {
-            let modalId = this.getAttribute("data-product-id");
-            document.getElementById(modalId).style.display = "flex";
-        });
-    });
+<button class="quick-view-btn" data-product-id="quick-view-{{ product.id }}">
+    Quick View
+  </button>
 
-    document.querySelectorAll(".close-btn").forEach(button => {
-        button.addEventListener("click", function () {
-            this.closest(".quick-view-modal").style.display = "none";
-        });
-    });
+  <!-- Hidden Quick View Modal for Each Product -->
+  <div id="quick-view-{{ product.id }}" class="quick-view-modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="quick-view-product">
+        <img src="{{ product.featured_image | img_url: '400x' }}" alt="{{ product.title }}">
+        <h2>{{ product.title }}</h2>
+        <p>{{ product.price | money }}</p>
+        <p>{{ product.description | truncatewords: 30 }}</p>
 
-    window.addEventListener("click", function (event) {
-        document.querySelectorAll(".quick-view-modal").forEach(modal => {
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        });
-    });
-});
-
+        <form method="post" action="/cart/add">
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+          <button type="submit">Add to Cart</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
