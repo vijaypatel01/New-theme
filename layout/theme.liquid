@@ -21,6 +21,9 @@
     {%- if cart != empty -%}
       <script src="{{ 'cart.min.js' | asset_url }}"></script>
     {% endif %}
+    {% style %}
+      {{ settings.font-family | font_face: font_display: 'swap' }}
+    {% endstyle %}
     <style>
       :root{
         --font-family:{{ settings.font-family.family }},{{ settings.font-family.fallback_families }};
