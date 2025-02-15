@@ -22,6 +22,10 @@ h1,h2,h3,h4,h5,h6,p,a,button{
   color: var(--button-text-color);
   font-size:var(--button-font-size);
 }
+.button-primary:hover{
+  color: var(--button-bg-color);
+  background: var(--button-text-color);
+}
 img{
   width:100%;
   height:100%;
