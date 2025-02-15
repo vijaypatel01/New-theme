@@ -12,14 +12,9 @@
     "main-product": {
       "type": "main-product",
       "settings": {}
-    },
-    "pagefly-product-section": {
-      "type": "pagefly-product-section",
-      "settings": {}
     }
   },
   "order": [
-    "main-product",
-    "pagefly-product-section"
+    "main-product"
   ]
 }
