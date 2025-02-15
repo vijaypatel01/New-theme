@@ -68,6 +68,17 @@
     ]
   },
   {
+    "name":"Font Style",
+    "settings": [
+      {
+        "type": "font_picker",
+        "id": "font-family",
+        "label": "Font Family",
+        "default": "helvetica_n4"
+      }
+    ]
+  },
+  {
     "name": "t:sections.all.section-padding.name",
     "settings": [
       {
