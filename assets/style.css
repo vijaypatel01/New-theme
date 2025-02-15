@@ -167,6 +167,12 @@ a{
   padding-right:60px;
 }
 /* end padding css */
+.border-none{
+  border:none;
+}
+.background-none{
+  background:transparent;
+}
 .translate-x-50{
   transform:translateX(-50%);
 }
