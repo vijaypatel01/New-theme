@@ -85,7 +85,7 @@
     </button>
   {%- endform -%}
 </product-form>
-<button class="quick-view-btn" data-product-id="quick-view-{{ product.id }}">
+<button class="quick-view-btn button-primary" data-product-id="quick-view-{{ product.id }}">
     Quick View
   </button>
   <div id="quick-view-{{ product.id }}" class="quick-view-modal">
@@ -99,7 +99,7 @@
 
         <form method="post" action="/cart/add">
           <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-          <button type="submit">Add to Cart</button>
+          <button type="submit" class="button-primary">Add to Cart</button>
         </form>
       </div>
     </div>
