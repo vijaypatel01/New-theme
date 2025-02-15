@@ -13,8 +13,13 @@
       "type": "main-product",
       "settings": {}
     },
+    "pagefly-product-section": {
+      "type": "pagefly-product-section",
+      "settings": {}
+    }
   },
   "order": [
-    "main-product"
+    "main-product",
+    "pagefly-product-section"
   ]
 }
