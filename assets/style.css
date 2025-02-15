@@ -170,6 +170,12 @@ a{
 .border-none{
   border:none;
 }
+.border-one{
+  border:1px solid #000;
+}
+.border-r-8{
+  border-radius:8px;
+}
 .background-none{
   background:transparent;
 }
