@@ -17,8 +17,8 @@ h1,h2,h3,h4,h5,h6,p,a,button{
 }
 .button-primary{
   padding: 15px 50px;
-  border: 1px solid #000;
-  background: #000;
+  border: 1px solid var(--button-bg-color);
+  background: var(--button-bg-color);
   color: #fff;
   font-size:var(--button-font-size);
 }
