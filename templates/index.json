@@ -9,62 +9,14 @@
  */
 {
   "sections": {
-    "image-banner": {
-      "type": "image-banner",
-      "blocks": {
-        "image": {
-          "type": "image",
-          "static": true,
-          "settings": {
-            "image": "shopify://shop_images/collection-category-5.png"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "static": true,
-          "settings": {
-            "heading": "heading"
-          }
-        },
-        "description": {
-          "type": "description",
-          "static": true,
-          "settings": {
-            "description": "<p>Give customers details about the banner image(s) or content on the template.</p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "static": true,
-          "settings": {
-            "button-text": "Button Label",
-            "button-url": ""
-          }
-        }
-      },
+    "image_section_RQREay": {
+      "type": "image-section",
       "settings": {
-        "section-background-color": "#f5f5f5",
-        "container-background-color": "none"
-      }
-    },
-    "featured_product_n4hfzL": {
-      "type": "featured-product",
-      "settings": {
-        "product": "10inch-anime-cute-digital-monster-digimon-koromon-soft-plush-toy-doll-pillow"
-      }
-    },
-    "featured_collection_product_mwbRpi": {
-      "type": "featured-collection-product",
-      "settings": {
-        "heading": "Featured Product",
-        "collection": "vans",
-        "product-columns": 4
+        "image": "shopify://shop_images/collection-category-5.png"
       }
     }
   },
   "order": [
-    "image-banner",
-    "featured_product_n4hfzL",
-    "featured_collection_product_mwbRpi"
+    "image_section_RQREay"
   ]
 }
