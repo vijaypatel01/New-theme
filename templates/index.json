@@ -9,14 +9,14 @@
  */
 {
   "sections": {
-    "image_section_RQREay": {
-      "type": "image-section",
+    "featured_product_DYNq3k": {
+      "type": "featured-product",
       "settings": {
-        "image": "shopify://shop_images/collection-category-5.png"
+        "product": "10inch-anime-cute-digital-monster-digimon-koromon-soft-plush-toy-doll-pillow"
       }
     }
   },
   "order": [
-    "image_section_RQREay"
+    "featured_product_DYNq3k"
   ]
 }
