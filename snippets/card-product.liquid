@@ -1,54 +1,54 @@
-{%- if product != empty -%}
+{%- if card-product != empty -%}
 <div class="image-block">
   <img
     srcset="
-      {%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
-      {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
-      {%- if product.featured_media.width >= 533 -%}{{ product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
-      {%- if product.featured_media.width >= 720 -%}{{ product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
-      {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
-      {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
-      {{ product.featured_media | image_url }} {{ product.featured_media.width }}w
+      {%- if card-product.featured_media.width >= 165 -%}{{ card-product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
+      {%- if card-productt.featured_media.width >= 360 -%}{{ card-product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
+      {%- if card-product.featured_media.width >= 533 -%}{{ card-product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
+      {%- if card-product.featured_media.width >= 720 -%}{{ card-product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
+      {%- if card-product.featured_media.width >= 940 -%}{{ card-product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
+      {%- if card-productt.featured_media.width >= 1066 -%}{{ card-product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
+      {{ card-product.featured_media | image_url }} {{ card-product.featured_media.width }}w
     "
-    src="{{ product.featured_media | image_url: width: 533 }}"
+    src="{{ card-product.featured_media | image_url: width: 533 }}"
     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-    alt="{{ product.featured_media.alt | escape }}"
+    alt="{{ card-product.featured_media.alt | escape }}"
     class="motion-reduce"
     {% unless lazy_load == false %}
       loading="lazy"
     {% endunless %}
-    width="{{ product.featured_media.width }}"
-    height="{{ product.featured_media.height }}"
+    width="{{ card-product.featured_media.width }}"
+    height="{{ card-product.featured_media.height }}"
   >
-  {%- if product.media[1] != null -%}
+  {%- if card-product.media[1] != null -%}
     <img
       srcset="
-        {%- if product.media[1].width >= 165 -%}{{ product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
-        {%- if product.media[1].width >= 360 -%}{{ product.media[1] | image_url: width: 360 }} 360w,{%- endif -%}
-        {%- if product.media[1].width >= 533 -%}{{ product.media[1] | image_url: width: 533 }} 533w,{%- endif -%}
-        {%- if product.media[1].width >= 720 -%}{{ product.media[1] | image_url: width: 720 }} 720w,{%- endif -%}
-        {%- if product.media[1].width >= 940 -%}{{ product.media[1] | image_url: width: 940 }} 940w,{%- endif -%}
-        {%- if product.media[1].width >= 1066 -%}{{ product.media[1] | image_url: width: 1066 }} 1066w,{%- endif -%}
-        {{ product.media[1] | image_url }} {{ product.media[1].width }}w
+        {%- if card-product.media[1].width >= 165 -%}{{ card-product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
+        {%- if card-product.media[1].width >= 360 -%}{{ card-product.media[1] | image_url: width: 360 }} 360w,{%- endif -%}
+        {%- if card-product.media[1].width >= 533 -%}{{ card-product.media[1] | image_url: width: 533 }} 533w,{%- endif -%}
+        {%- if card-product.media[1].width >= 720 -%}{{ card-product.media[1] | image_url: width: 720 }} 720w,{%- endif -%}
+        {%- if card-product.media[1].width >= 940 -%}{{ card-product.media[1] | image_url: width: 940 }} 940w,{%- endif -%}
+        {%- if card-product.media[1].width >= 1066 -%}{{ card-product.media[1] | image_url: width: 1066 }} 1066w,{%- endif -%}
+        {{ card-product.media[1] | image_url }} {{ card-product.media[1].width }}w
       "
-      src="{{ product.media[1] | image_url: width: 533 }}"
+      src="{{ card-product.media[1] | image_url: width: 533 }}"
       sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
       alt=""
       class="motion-reduce"
       loading="lazy"
-      width="{{ product.media[1].width }}"
-      height="{{ product.media[1].height }}"
+      width="{{ card-product.media[1].width }}"
+      height="{{ card-product.media[1].height }}"
     >
   {%- endif -%}
 </div>
 <div class="text-block flex flex-wrap gap">
   <h3 class="w-100">
-    <a href="{{ product.url }}">{{ product.title | capitalize }}</a>
+    <a href="{{ card-product.url }}">{{ card-product.title | capitalize }}</a>
   </h3>
-  <span class="w-100">{{ product.price | money }}</span>
+  <span class="w-100">{{ card-product.price | money }}</span>
   <product-form data-section-id="{{ section.id }}" class="w-100">
   {%- form 'product',
-    product,
+    card-product,
     id: product_form_id,
     class: 'form',
     novalidate: 'novalidate',
@@ -57,9 +57,9 @@
     <input
       type="hidden"
       name="id"
-      value="{{ product.selected_or_first_available_variant.id }}"
+      value="{{ card-product.selected_or_first_available_variant.id }}"
       class="product-variant-id"
-      {% if product.selected_or_first_available_variant.available == false %}
+      {% if card-product.selected_or_first_available_variant.available == false %}
         disabled
       {% endif %}
     >
@@ -69,15 +69,15 @@
       name="add"
       class="quick-add__submit button-primary"
       aria-haspopup="dialog"
-      aria-labelledby="{{ product_form_id }}-submit title-{{ section.id }}-{{ product.id }}"
+      aria-labelledby="{{ product_form_id }}-submit title-{{ section.id }}-{{ card-product.id }}"
       aria-live="polite"
       data-sold-out-message="true"
-      {% if product.selected_or_first_available_variant.available == false %}
+      {% if card-product.selected_or_first_available_variant.available == false %}
         disabled
       {% endif %}
     >
       <span>
-        {%- if product.selected_or_first_available_variant.available -%}
+        {%- if card-product.selected_or_first_available_variant.available -%}
           Add To Cart
         {%- else -%}
           Sold Out
@@ -86,20 +86,20 @@
     </button>
   {%- endform -%}
 </product-form>
-<button class="quick-view-btn button-primary" data-product-id="quick-view-{{ product.id }}">
+<button class="quick-view-btn button-primary" data-product-id="quick-view-{{ card-product.id }}">
     Quick View
   </button>
-  <div id="quick-view-{{ product.id }}" class="quick-view-modal">
+  <div id="quick-view-{{ card-product.id }}" class="quick-view-modal">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
       <div class="quick-view-product">
-        <img src="{{ product.featured_image | img_url: '400x' }}" alt="{{ product.title }}">
-        <h2>{{ product.title }}</h2>
-        <p>{{ product.price | money }}</p>
-        <p>{{ product.description | truncatewords: 30 }}</p>
+        <img src="{{ card-product.featured_image | img_url: '400x' }}" alt="{{ card-product.title }}">
+        <h2>{{ card-product.title }}</h2>
+        <p>{{ card-product.price | money }}</p>
+        <p>{{ card-product.description | truncatewords: 30 }}</p>
 
         <form method="post" action="/cart/add">
-          <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+          <input type="hidden" name="id" value="{{ card-product.variants.first.id }}">
           <button type="submit" class="button-primary">Add to Cart</button>
         </form>
       </div>
