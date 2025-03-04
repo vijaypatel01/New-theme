@@ -1,3 +1,4 @@
+{%- if product and product != empty -%}
 <div class="image-block">
   <img
     srcset="
@@ -105,3 +106,6 @@
     </div>
   </div>
 </div>
+{% else %}
+  
+{% endif %}
