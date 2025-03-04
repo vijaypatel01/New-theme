@@ -19,7 +19,7 @@
       "type": "featured-collection-product",
       "settings": {
         "heading": "Featured Product",
-        "collection": "",
+        "collection": "3-d-puzzles",
         "product-columns": 4
       }
     }
