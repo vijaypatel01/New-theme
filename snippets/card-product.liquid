@@ -108,7 +108,11 @@
 </div>
 {% else %}
   <div class="image-block">
-    <img src="{{ product.featured_media | image_url: width: 533 }}">
+    {%- if placeholder_image -%}
+      {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- else -%}
+      {{ 'product-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
   </div>
   <div class="text-block flex flex-wrap gap">
     <h3 class="w-100">
