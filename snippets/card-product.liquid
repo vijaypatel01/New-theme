@@ -1,3 +1,4 @@
+{%- if product != empty -%}
 <div class="image-block">
   <img
     srcset="
@@ -85,7 +86,7 @@
     </button>
   {%- endform -%}
 </product-form>
-<button class="quick-view-btn" data-product-id="quick-view-{{ product.id }}">
+<button class="quick-view-btn button-primary" data-product-id="quick-view-{{ product.id }}">
     Quick View
   </button>
   <div id="quick-view-{{ product.id }}" class="quick-view-modal">
@@ -105,3 +106,18 @@
     </div>
   </div>
 </div>
+{% else %}
+  <div class="image-block">
+    {%- if placeholder_image -%}
+      {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- else -%}
+      {{ 'product-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </div>
+  <div class="text-block flex flex-wrap gap">
+    <h3 class="w-100">
+      Product Title
+    </h3>
+    <span class="w-100">9.99</span>
+  </div>
+{% endif %}
