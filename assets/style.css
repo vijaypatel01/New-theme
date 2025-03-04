@@ -295,7 +295,7 @@ li.card-product-column .image-block{
   padding-bottom:100%;
   position:relative;
 }
-li.card-product-column .image-block img{
+li.card-product-column .image-block img,li.card-product-column .image-block svg{
   position: absolute;
   top: 0;
   left: 0;
